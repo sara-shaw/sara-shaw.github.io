@@ -19,6 +19,7 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --transition: all .4s ease-in-out;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
   background-color: var(--color-primary);
   font-size: 1.1rem;
   color: var(--color-white);
-  transition: all 0.4s ease-in-out;
+  transition: var(--transition);
 }
 
 a {
@@ -49,4 +50,60 @@ section {
   left: 0;
   top: 0;
   padding: 3rem 18rem;
+}
+
+.section {
+  transform: translateY(-100%);
+  transition: var(--transition);
+  background-color: var(--color-primary);
+}
+
+.sec1 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec2 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec3 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec4 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec5 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.controls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.controls .control {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-grey-4);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow-1);
 }/*# sourceMappingURL=style.css.map */
