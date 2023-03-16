@@ -93,6 +93,13 @@ section {
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
+    .active-btn {
+        background-color: var(--color-secondary) !important;
+        transition: var(--transition);
+        i {
+            color: var(--color-white) !important;
+        }
+    }
     .control {
         padding: 1rem;
         cursor: pointer;
@@ -105,5 +112,10 @@ section {
         align-items: center;
         margin: .7rem 0;
         box-shadow: var(--box-shadow-1);
+        i {
+            font-size: 1.2rem;
+            color: var(--color-grey-1);
+            pointer-events: none;
+        }
     }
 }
