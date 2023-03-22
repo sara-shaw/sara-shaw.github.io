@@ -66,6 +66,7 @@ section {
 .sec2 {
     display: none;
     transform: translateY(0) scale(1);
+    background-color: slateblue;
 }
 
 .sec3 {
@@ -81,6 +82,19 @@ section {
 .sec5 {
     display: none;
     transform: translateY(0) scale(1);
+}
+
+.active {
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0% {
+            transform: translateY(-100%) scaleY(0);
+        }
+        100% {
+            transform: translateY(0) scaleY(1);
+        }
+    }
 }
 
 .controls {
@@ -117,5 +131,18 @@ section {
             color: var(--color-grey-1);
             pointer-events: none;
         }
+    }
+}
+
+/************** Header ****************/
+
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    .left-header {
+        display: flex;
+        align-items: center;
+        position: relative;
     }
 }
