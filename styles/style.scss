@@ -146,3 +146,19 @@ section {
         position: relative;
     }
 }
+
+/******** Independent components ************/@at-root
+.main-btn {
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .btn-text {
+        padding: 0 2rem;
+    }
+    
+}
