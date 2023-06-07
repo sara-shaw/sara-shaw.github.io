@@ -27,35 +27,42 @@
                 <ul class="nav__list grid">
                     <li class="nav__item">
                         <a href="#home" class="nav__link">
-                            <i class="fa-regular fa-house"></i> Home
+                            <i class="fa-solid fa-house nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
-                            <i class="fa-regular fa-user"></i> About Me
+                            <i class="fa-solid fa-user nav__icon"></i> About Me
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class="fa-regular fa-file-lines"></i> Skills
+                            <i class="fa-solid fa-file-lines nav__icon"></i> Skills
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#services" class="nav__link">
-                            <i class="fa-regular fa-briefcase"></i> Services
+                            <i class="fa-solid fa-briefcase nav__icon"></i> Services
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#portfolio" class="nav__link">
-                            <i class="fa-regular fa-image"></i> Portfolio
+                            <i class="fa-regular fa-image nav__icon"></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="fa-regular fa-messages"></i> Contact Me
+                            <i class="fa-solid fa-message nav__icon"></i>Contact Me
                         </a>
                     </li>
                 </ul>
+                <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -64,7 +71,37 @@
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/sara-shaw22/" target="_blank" class="home__social-icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/sara-shaw" target="_blank" class="home__social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
 
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#FF0066"
+                                d="M58.5,-57.9C74.9,-42.1,86.6,-21,86,-0.6C85.4,19.8,72.4,39.7,56.1,55.6C39.7,71.6,19.8,83.7,0.8,82.9C-18.1,82,-36.3,68.2,-52.2,52.3C-68.1,36.3,-81.8,18.1,-83.8,-2.1C-85.9,-22.3,-76.3,-44.5,-60.4,-60.4C-44.5,-76.2,-22.3,-85.7,-0.6,-85.1C21,-84.5,42.1,-73.8,58.5,-57.9Z"
+                                transform="translate(100 100)" />
+                            <image class="home__blob-img" xlink:href="img/profpic.jpg" />
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Sara</h1>
+                        <h3 class="home__subtitle">Software Developer</h3>
+                        <p class="home__description">I'm a Junior Software Developer who is pursuing a Bachelor's Degree
+                            in Software Engineering. I'm passionate about all things tech and interested in how we can
+                            utilize tech to make life more awesome.</p>
+                        <a href="#contact" class="button button--flex">Contact Me<i
+                                class="fa-solid fa-message button__icon"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--==================== ABOUT ====================-->
