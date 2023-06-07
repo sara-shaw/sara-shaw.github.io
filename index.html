@@ -84,10 +84,18 @@
 
                     <div class="home__img">
                         <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#FF0066"
-                                d="M58.5,-57.9C74.9,-42.1,86.6,-21,86,-0.6C85.4,19.8,72.4,39.7,56.1,55.6C39.7,71.6,19.8,83.7,0.8,82.9C-18.1,82,-36.3,68.2,-52.2,52.3C-68.1,36.3,-81.8,18.1,-83.8,-2.1C-85.9,-22.3,-76.3,-44.5,-60.4,-60.4C-44.5,-76.2,-22.3,-85.7,-0.6,-85.1C21,-84.5,42.1,-73.8,58.5,-57.9Z"
-                                transform="translate(100 100)" />
-                            <image class="home__blob-img" xlink:href="img/profpic.jpg" />
+                            <mask id="mask0" mask-type="alpha">
+                                <path fill="#8A3FFC"
+                                    d="M58.5,-57.9C74.9,-42.1,86.6,-21,86,-0.6C85.4,19.8,72.4,39.7,56.1,55.6C39.7,71.6,19.8,83.7,0.8,82.9C-18.1,82,-36.3,68.2,-52.2,52.3C-68.1,36.3,-81.8,18.1,-83.8,-2.1C-85.9,-22.3,-76.3,-44.5,-60.4,-60.4C-44.5,-76.2,-22.3,-85.7,-0.6,-85.1C21,-84.5,42.1,-73.8,58.5,-57.9Z"
+                                    transform="translate(100 100)" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path fill="#8A3FFC"
+                                    d="M58.5,-57.9C74.9,-42.1,86.6,-21,86,-0.6C85.4,19.8,72.4,39.7,56.1,55.6C39.7,71.6,19.8,83.7,0.8,82.9C-18.1,82,-36.3,68.2,-52.2,52.3C-68.1,36.3,-81.8,18.1,-83.8,-2.1C-85.9,-22.3,-76.3,-44.5,-60.4,-60.4C-44.5,-76.2,-22.3,-85.7,-0.6,-85.1C21,-84.5,42.1,-73.8,58.5,-57.9Z"
+                                    transform="translate(100 100)" />
+                                <image class="home__blob-img" x='12' y="18"
+                                    xlink:href="img/profpic-removebg-preview.png" />
+                            </g>
                         </svg>
                     </div>
 
@@ -97,16 +105,48 @@
                         <p class="home__description">I'm a Junior Software Developer who is pursuing a Bachelor's Degree
                             in Software Engineering. I'm passionate about all things tech and interested in how we can
                             utilize tech to make life more awesome.</p>
-                        <a href="#contact" class="button button--flex">Contact Me<i
+                        <a href="#contact" class="button button--flex">Contact Me <i
                                 class="fa-solid fa-message button__icon"></i></a>
                     </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <span class="home__scroll-name">Scroll down </span><i
+                            class="fa-solid fa-angles-down home__scroll-arrow"></i></a>
                 </div>
             </div>
         </section>
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
 
+            <div class="about__container container grid">
+                <img src="img/profpic.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__descrip">I am currently attending a program for Web and Mobile Development, and
+                        will be pursuing a bachelor's degree after completion. I currently work for a mid-size company
+                        that produces software for Law Enforcement agencies across the United States.</p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">02+</span>
+                            <span class="about__info-name">Years <br> experience</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">05+</span>
+                            <span class="about__info-name">Completed <br> projects</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="#" class="button button--flex">
+                            Download CV
+                            <i class="fa-solid fa-download button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--==================== SKILLS ====================-->
