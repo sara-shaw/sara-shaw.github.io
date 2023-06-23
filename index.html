@@ -9,10 +9,10 @@
     <script src="https://kit.fontawesome.com/f01090810d.js" crossorigin="anonymous"></script>
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Portfolio - Sara</title>
 </head>
@@ -328,7 +328,58 @@
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most Recent Work</span>
 
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!---------------------- PORTFOLIO CONTENT 1 ------------------------>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="img/profpic.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Recipe Manager</h3>
+                            <p class="portfolio__description">Website that utilizes angular to manage lists of recipes
+                                and
+                                shopping lists.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fa-solid fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!---------------------- PORTFOLIO CONTENT 2 ------------------------>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="img/profpic.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Map Website</h3>
+                            <p class="portfolio__description">Website that uses an API to allow the user to select a
+                                location on the map and record a workout.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fa-solid fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!---------------------- PORTFOLIO CONTENT 3 ------------------------>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="img/profpic.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Business Website</h3>
+                            <p class="portfolio__description">Website built for a small local business to attract
+                                potential
+                                customers.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fa-solid fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
@@ -356,10 +407,10 @@
 
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
